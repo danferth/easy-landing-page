@@ -17,13 +17,13 @@ You upload the logo and a simple `HTML` page saying "under construction"
 
 > *Got it up if I have time today I'll add a simple email form to gather interested people and whatnot*
 
-**Don't you wish you had a simple straight forward way of throwing up a landing page with a logo maybe a descriptive paragraph and input to gather emails just to make a client happy. And don't you wish you could have it up as fast as it took you to buy his/her domain?**
+**Don't you wish you had a simple straight forward way of throwing up a landing page with a logo maybe a descriptive paragraph and input to gather emails just to make a client happy? And don't you wish you could have it up as fast as it took you to buy his/her domain?**
 
 --------------------
 
 ##Enter Easy Landing Page
 
-Built in `PHP` with [PHPMailer](https://github.com/PHPMailer/PHPMailer) for the email `input`. All you have to do is drop in the logo in `assets/images` and fill out a 14 line `config` file and your done!  You willhave a happy client and you don't have to reinvent the wheel each and every time.  it doesn't use any fancy `grunt/gulp` or `sass/less` or any wierd javascript stuff to make it complicated just vanila `css` and `PHP`.  You don't even have to know `PHP` the `config` file hase all the documentation needed.
+Built in `PHP` with [PHPMailer](https://github.com/PHPMailer/PHPMailer) for the email `input`. All you have to do is drop the logo in `assets/images` and fill out a 14 line `config` file and your done!  You will have a happy client and you don't have to reinvent the wheel each and every time.  it doesn't use any fancy `grunt/gulp` or `sass/less` or any weird JavaScript stuff to make it complicated just vanilla `css` and `PHP`.  You don't even have to know `PHP` the `config` file has all the documentation needed.
 
 You can customize the Title, intro paragraph, error messages nd everything if you like right from the `config` file. Look at it as a go too get it done kind of thing.
 
@@ -42,19 +42,19 @@ Footer with company name and &copy; date *(date is dynamic)*
 
 ###A Little About the Email
 
-I used [PHPMailer](https://github.com/PHPMailer/PHPMailer) to send the email and it will send you an `HTML` email with the users `IP` and date/time for referance.
+I used [PHPMailer](https://github.com/PHPMailer/PHPMailer) to send the email and it will send you an `HTML` email with the users `IP` and date/time for reference.
 
 In case of any errors it will notify the user *(so they at least know it didn't go through)* and log the error in `assets/logs/error.txt` with time stamp so you can debug yourself what went wrong.
 
 ###The Styling
 
-Colors are all grey so it shouldn't conflict with any colors in the logo. The background is even white so when you get that `.jpeg` and think 'great now I have to clip the background in photoshop`, you can sit back and say 'cool this is easy!
+Colors are all grey so it shouldn't conflict with any colors in the logo. The background is even white so when you get that `.jpeg` and think 'great now I have to clip the background in Photoshop`, you can sit back and say 'cool this is easy!
 
 A dark theme is an idea and would be integrated in the `config` so it stays easy.
 
 ###So About That Config File
 
-It's easy. Think of it as a questionar to what they wnat. You can even ask the basic questions and leave the rest default if you want.
+It's easy. Think of it as a questioner to what they want. You can even ask the basic questions and leave the rest default if you want.
 
 ####Here are the variables and descriptions
 
@@ -71,7 +71,7 @@ It's easy. Think of it as a questionar to what they wnat. You can even ask the b
 - **$my_name**         = if you hit reply from the incoming email this is the name that displays - who sent it.
 - **$email_subject**   = the subject line of the incoming email.
 - **$error_message**   = the error message that is displayed if the email did not send.  A log - file is created as well.
-- **$success_message** = on successfull email completion this message is displayed instead of the form.
+- **$success_message** = on successful email completion this message is displayed instead of the form.
 
 ###On the Optional Stuff
 
