@@ -1,0 +1,9 @@
+/* TEAM */
+Dan_Klotz = developer;
+Dan_Klotz.twitter = @danferth
+
+
+/* TECH */
+PHP
+vanila css
+PHPMailer = https://github.com/PHPMailer/PHPMailer
