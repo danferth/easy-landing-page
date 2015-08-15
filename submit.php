@@ -24,7 +24,7 @@ $body .= sprintf("</html>");
 $mail = new PHPMailer;
 $mail->setFrom($_POST['email'], $page);
 $mail->addReplyTo($_POST['email']);
-$mail->addAddress($my_email, $my_name);
+$mail->addAddress($my_email);
 $mail->Subject = $email_subject;
 $mail->msgHTML($body);
 

@@ -50,7 +50,7 @@ require 'config.php';
     <div class="push"></div>
     </div>    <!-- end .wrap -->
     <footer>
-        <p class="copywrite"><?php echo $company; ?> &copy;<?php echo date(Y); ?></p>
+        <p class="copywrite"><?php echo "<a href='" . $company_URL . "'>" . $company . "</a> "; ?> &copy;<?php echo date(Y); ?></p>
     </footer>
     
     

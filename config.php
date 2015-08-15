@@ -12,6 +12,7 @@ That's it just fill in the blanks drop in the logo and upload!
 --------------------------------
 $page           = in the incoming emails it will say "Contact from " . $page . " Landing page" this is more important for those with lots of these floating around the intertubes.
 $company         = used in the footer again some people have pages for products in development so it may be a page for a widget that was created by company x. you get the idea
+$company_URL     = the footer has a link to company this is the URL
 $title           = this is the title attribute (aka tab title)
 $logo            = the logo file you will be dropping into assets/images
 $logo_alt_text   = the alt text for the logo.
@@ -19,7 +20,6 @@ $message         = a paragraph that can be displayed under the logo. Set to fals
 $form_message    = one liner under form to let them know what they are signing up for. Mailing list, more info, sales calls... Again set to false if not wanted.
 $placeholder     = placeholder for input (what is displays when no email is entered)
 $submit          = Some people may want a custom message other than "submit".
-$my_email        = the email address the form sends to
 $my_name         = if you hit reply from the incoming email this is the name that displays who sent it.
 $email_subject   = the subject line of the incoming email.
 $error_message   = the error message that is displayed if the email did not send.  A log file is created as well.
@@ -29,6 +29,7 @@ $success_message = on successfull email completion this message is displayed ins
 
 $page            = "name your landing page";
 $company         = "company name for footer";
+$company_URL     = "URL for footer";
 $page_title      = "tab title";
 $title           = ".::UNDER CONSTRUCTION::.";
 $logo_file       = "logo.jpg";
@@ -38,7 +39,6 @@ $form_message    = "For updates or more information on this product.";
 $placeholder     = "your email";
 $submit          = "submit";
 $my_email        = "your.email@example.con";
-$my_name         = "first last";
 $email_subject   = "inquary from easy landing page";
 $error_message   = "Opps! we had an error in sending the email, our applogies, we have logged this error and will have a fix soon.";
 $success_message = "Hurrah! email sent! sit back and wait for the unvailing of our awesome site!";

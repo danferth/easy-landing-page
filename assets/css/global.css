@@ -120,12 +120,20 @@ footer p{
     color:hsla(104, 0%, 70%, 1);
     margin:0;
 }
+footer p a{
+    color:hsla(104, 0%, 70%, 1);
+    text-decoration:none;
+    border-bottom: 1px dashed hsla(104, 0%, 85%, 1);
+}
+footer p a:hover{
+    color:hsla(104, 0%, 60%, 1);
+    border-color:hsla(104, 0%, 60%, 1);
+}
 
 
 @media(max-width:800px){
     .logo{
         width:95%;
-        outline:1px solid red;
     }
     .title{
         font-size:4em;
@@ -161,7 +169,6 @@ footer p{
 @media(max-width:420px){
     .logo{
         width:95%;
-        outline:1px solid blue;
     }
     .title{
         font-size:2em;
