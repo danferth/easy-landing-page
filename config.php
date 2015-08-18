@@ -51,5 +51,6 @@ $success_message = "Hurrah! email sent! sit back and wait for the unvailing of o
 //uncomment to set submit.php to use gmail
 //$mail_method     = "gmail";
 //make sure that $my_email above is set to your gmail account
+$gmail_email     = "gmail acount to send mail";
 $my_password     = "your gmail password";
 ?>

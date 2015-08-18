@@ -36,7 +36,7 @@ if($mail_method == "gmail"){
   $mail->Port = 587;
   $mail->SMTPSecure = 'tls';
   $mail->SMTPAuth = true;
-  $mail->Username = $my_email;
+  $mail->Username = $gmail_email;
   $mail->Password = $my_password;
 }
 
