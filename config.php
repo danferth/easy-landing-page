@@ -27,6 +27,10 @@ $success_message = on successfull email completion this message is displayed ins
 
 */
 
+//Time zone set for SMTP & logs
+date_default_timezone_set('America/Los_Angeles');
+
+//the 14 variables
 $page            = "name your landing page";
 $company         = "company name for footer";
 $company_URL     = "URL for footer";
@@ -42,4 +46,10 @@ $my_email        = "your.email@example.con";
 $email_subject   = "inquary from easy landing page";
 $error_message   = "Opps! we had an error in sending the email, our applogies, we have logged this error and will have a fix soon.";
 $success_message = "Hurrah! email sent! sit back and wait for the unvailing of our awesome site!";
+
+//to send the email through gmails servers set the below
+//uncomment to set submit.php to use gmail
+//$mail_method     = "gmail";
+//make sure that $my_email above is set to your gmail account
+$my_password     = "your gmail password";
 ?>

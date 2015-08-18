@@ -42,7 +42,7 @@ Footer with company name and &copy; date *(date is dynamic)*
 
 ###A Little About the Email
 
-I used [PHPMailer](https://github.com/PHPMailer/PHPMailer) to send the email and it will send you an `HTML` email with the users `IP` and date/time for reference.
+I used [PHPMailer](https://github.com/PHPMailer/PHPMailer) to send the email and it will send you an `HTML` email with the users `IP` and date/time for reference.  YOu have the option to use gmails servers to send the email, see comments in config file.
 
 In case of any errors it will notify the user *(so they at least know it didn't go through)* and log the error in `assets/logs/error.txt` with time stamp so you can debug yourself what went wrong.
 

@@ -22,6 +22,24 @@ $body .= sprintf("</html>");
 
 
 $mail = new PHPMailer;
+
+if($mail_method == "gmail"){
+  $mail->isSMTP();
+  //Enable SMTP debugging
+  // 0 = off (for production use)
+  // 1 = client messages
+  // 2 = client and server messages
+  $mail->SMTPDebug = 2;
+  $mail->Debugoutput = 'html';
+  //after testing comment out the above two(2) lines
+  $mail->Host = 'smtp.gmail.com';
+  $mail->Port = 587;
+  $mail->SMTPSecure = 'tls';
+  $mail->SMTPAuth = true;
+  $mail->Username = $my_email;
+  $mail->Password = $my_password;
+}
+
 $mail->setFrom($_POST['email'], $page);
 $mail->addReplyTo($_POST['email']);
 $mail->addAddress($my_email);
@@ -32,7 +50,6 @@ if (!$mail->send()) {
     $status = "error";
     //log the error
     $mail_error = $mail->ErrorInfo;
-    date_default_timezone_set('America/Los_Angeles');
 	$error_date = date('m\-d\-Y\-h:iA');
     $log = "assets/logs/error.txt";
 	$fp = fopen($log,"a+");
@@ -43,5 +60,8 @@ if (!$mail->send()) {
     $status = "success";
     header('Location: http://' . $server_dir . $next_page . $query_string . $status);
 }
+
+
+
 
 ?>
