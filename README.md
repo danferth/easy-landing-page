@@ -25,6 +25,8 @@ You upload the logo and a simple `HTML` page saying "under construction"
 
 Built in `PHP` with [PHPMailer](https://github.com/PHPMailer/PHPMailer) for the email `input`. All you have to do is drop the logo in `assets/images` and fill out a 14 line `config` file and your done!  You will have a happy client and you don't have to reinvent the wheel each and every time.  it doesn't use any fancy `grunt/gulp` or `sass/less` or any weird JavaScript stuff to make it complicated just vanilla `css` and `PHP`.  You don't even have to know `PHP` the `config` file has all the documentation needed.
 
+> you can see it in action [here](http://easylandingpage.danferth.com)
+
 You can customize the Title, intro paragraph, error messages nd everything if you like right from the `config` file. Look at it as a go too get it done kind of thing.
 
 ###Structure of the Page in a Nutshell
