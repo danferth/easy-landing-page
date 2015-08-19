@@ -23,7 +23,7 @@ $body .= sprintf("</html>");
 
 $mail = new PHPMailer;
 
-if($mail_method == "gmail"){
+if($mail_method == true){
   $mail->isSMTP();
   //Enable SMTP debugging
   // 0 = off (for production use)

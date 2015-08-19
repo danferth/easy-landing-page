@@ -25,7 +25,7 @@ You upload the logo and a simple `HTML` page saying "under construction"
 
 Built in `PHP` with [PHPMailer](https://github.com/PHPMailer/PHPMailer) for the email `input`. All you have to do is drop the logo in `assets/images` and fill out a 14 line `config` file and your done!  You will have a happy client and you don't have to reinvent the wheel each and every time.  it doesn't use any fancy `grunt/gulp` or `sass/less` or any weird JavaScript stuff to make it complicated just vanilla `css` and `PHP`.  You don't even have to know `PHP` the `config` file has all the documentation needed.
 
-> you can see it in action [here](http://easylandingpage.danferth.com)
+> ###You can see it in action [here](http://easylandingpage.danferth.com)
 
 You can customize the Title, intro paragraph, error messages nd everything if you like right from the `config` file. Look at it as a go too get it done kind of thing.
 
@@ -44,7 +44,7 @@ Footer with company name and &copy; date *(date is dynamic)*
 
 ###A Little About the Email
 
-I used [PHPMailer](https://github.com/PHPMailer/PHPMailer) to send the email and it will send you an `HTML` email with the users `IP` and date/time for reference.  YOu have the option to use gmails servers to send the email, see comments in config file.
+I used [PHPMailer](https://github.com/PHPMailer/PHPMailer) to send an `HTML` email with the visitors `IP` and date/time for reference.  You have the option to use gmail servers to send the email, just set gmail to `true` and fill in the acount user and password.
 
 In case of any errors it will notify the user *(so they at least know it didn't go through)* and log the error in `assets/logs/error.txt` with time stamp so you can debug yourself what went wrong.
 
@@ -52,7 +52,7 @@ In case of any errors it will notify the user *(so they at least know it didn't 
 
 Colors are all grey so it shouldn't conflict with any colors in the logo. The background is even white so when you get that `.jpeg` and think 'great now I have to clip the background in Photoshop`, you can sit back and say 'cool this is easy!
 
-A dark theme is an idea and would be integrated in the `config` so it stays easy.
+> A dark theme is an idea and would be integrated in the `config` so it stays easy.
 
 ###So About That Config File
 

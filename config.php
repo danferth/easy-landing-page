@@ -47,9 +47,8 @@ $email_subject   = "inquary from easy landing page";
 $error_message   = "Opps! we had an error in sending the email, our applogies, we have logged this error and will have a fix soon.";
 $success_message = "Hurrah! email sent! sit back and wait for the unvailing of our awesome site!";
 
-//to send the email through gmails servers set the below
-//uncomment to set submit.php to use gmail
-//$mail_method     = "gmail";
+//to send the email through gmails servers set $mail_method to true
+$mail_method     = false;
 //make sure that $my_email above is set to your gmail account
 $gmail_email     = "gmail acount to send mail";
 $my_password     = "your gmail password";
