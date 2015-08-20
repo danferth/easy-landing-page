@@ -82,7 +82,8 @@ A few(2) items are optional meaning some people may not what to use them.  If yo
 *I'm talking to you [Wordpress](https://www.google.com/search?q=wordpreess+adding+empty+p+tags&rlz=1C1GIWA_enUS634US634&oq=wordpreess+adding+empty+p+tags&aqs=chrome..69i57.398822j0j1&sourceid=chrome&es_sm=93&ie=UTF-8#q=wordpress+adding+empty+p+tags)*
 
 ###Things to get done on this repo
-[ ] Dark Theme
+- [ ] Dark Theme
+- [ ] OPtion for visitor to leave a message as well (`checkbox` to toggle...)
 
 
 **Thanks for viewing & hope you enjoy**
