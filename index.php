@@ -15,7 +15,17 @@ require 'config.php';
 <body>
     <div class="wrap">
     <div class="logo">
-        <img src="assets/images/<?php echo $logo_file; ?>" alt="<?php echo $logo_alt_text; ?>">
+    
+    <?php
+    
+        if($logo){
+            echo "<img src='assets/images/" . $logo_file . "' alt='" . $logo_alt_text . "'>";
+        }else{
+            echo "<h1 class='logo_text'>" . $logo_text . "</h1>";
+        }
+    
+    ?>
+        
     </div>
     
     <h1 class="title"><?php echo $title; ?></h1>
