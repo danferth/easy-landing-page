@@ -64,7 +64,9 @@ It's easy. Think of it as a questioner to what they want. You can even ask the b
 - **$company**         = used in the footer again some people have pages for products in - development so it may be a page for a widget that was created by company x. you get the - idea
 - **$company_URL**     = the footer has a link to company this is the URL
 - **$title**           = this is the title attribute (aka tab title)
-- **$logo**            = the logo file you will be dropping into assets/images
+- **$logo**            = boolean do you have a logo file
+- **$logo_text**       = the text to display if no logo image file is availables
+- **$logo_file**       = the logo file you will be dropping into assets/images
 - **$logo_alt_text**   = the alt text for the logo.
 - **$message**         = a paragraph that can be displayed under the logo. Set to false (no - quotes) if not in use.
 - **$form_message**    = one liner under form to let them know what they are signing up for. - Mailing list, more info, sales calls... Again set to false if not wanted.

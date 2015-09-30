@@ -23,11 +23,12 @@ html, body{width:100%; height:100%; margin:0; padding:0;}
 .logo_text{
     text-align:center;
     margin:0;
+    padding:1em 0;
     font-size:6em;
     font-family:"Source Sans Pro" sans-serif;
     font-weight:300;
     color:hsla(233, 0%, 70%, 1);
-    text-shadow:0 2px 3px hsla(233, 0%, 5%, .3);
+    text-shadow:0 2px 3px hsla(233, 0%, 5%, .2);
 }
 
 .title, .message, .copywrite{
@@ -140,7 +141,6 @@ footer p a:hover{
     border-color:hsla(104, 0%, 60%, 1);
 }
 
-
 @media(max-width:800px){
     .logo{
         width:95%;
@@ -176,7 +176,16 @@ footer p a:hover{
     }
 }
 
-@media(max-width:420px){
+@media screen and (max-width:600px){
+    .logo_text{
+        font-size:5em;
+    }
+}
+
+@media screen and (max-width:420px){
+    .logo_text{
+        font-size:4em;
+    }
     .logo{
         width:95%;
     }
@@ -209,6 +218,7 @@ footer p a:hover{
         padding:.6em 1.5em;
     }
 }
+
 
 
 
