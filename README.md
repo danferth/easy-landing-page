@@ -85,7 +85,7 @@ A few(2) items are optional meaning some people may not what to use them.  If yo
 
 ###Things to get done on this repo
 - [ ] Dark Theme
-- [ ] OPtion for visitor to leave a message as well (`checkbox` to toggle...)
+- [ ] Option for visitor to leave a message as well (`checkbox` to toggle...)
 
 
 **Thanks for viewing & hope you enjoy**
