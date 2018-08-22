@@ -1,0 +1,36 @@
+{
+  "name": "gulp-starter",
+  "version": "3.1.0",
+  "description": "gulp file for scss and js, you can take it from there.",
+  "license": "MIT",
+  "repository": "danferth/gulp-starter",
+  "author": {
+    "name": "Dan Klotz",
+    "email": "danferth@gmail.com",
+    "url": "danferth.com"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.5",
+    "colors": "^1.1.2",
+    "create-file": "^1.0.1",
+    "csswring": "^4.2.2",
+    "del": "^2.2.0",
+    "es6-promise": "^3.1.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-filesize": "0.0.6",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-sass-lint": "^1.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "imagemin-pngquant": "^4.2.2",
+    "jshint": "^2.9.1",
+    "jshint-stylish": "^2.1.0",
+    "mkdirp": "^0.5.1",
+    "yargs": "^4.6.0"
+  }
+}
