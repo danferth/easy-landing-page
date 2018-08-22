@@ -26,8 +26,7 @@ var src         = "assets",
     css_src     = src + "/scss",
     css_dest    = dest + "/css",
     //js locations
-    js_file     = "index",
-    js_lib_src  = src + "/lib",
+    js_file     = "site",
     js_src      = src + "/js",
     js_dest     = dest + "/js",
     //image locations
@@ -118,7 +117,7 @@ gulp.task('css',function(){
 //concat | jshint | filesize
 //(--production) concat | sourcemaps | minimize | filesize
 gulp.task('js', function(){
-  return gulp.src([js_lib_src +'/**/**', js_src + '/*.js'])
+  return gulp.src([js_src + '/*.js'])
   .pipe(concat(js_file + '.js'))
   
   .pipe(gulpif(argv.production, filesize()))
