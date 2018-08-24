@@ -30,26 +30,29 @@ $success_message = on successfull email completion this message is displayed ins
 */
 
 //Time zone set for SMTP & logs
+//http://php.net/manual/en/function.date-default-timezone-set.php
 date_default_timezone_set('America/Los_Angeles');
 
-//the 14 variables
-$page            = "name your landing page";
-$company         = "company name for footer";
-$company_URL     = "URL for footer";
-$page_title      = "tab title";
-$title           = "Super Easy Landing Page!";
-$logo            = true;
-$logo_text       = "An Awesome Logo";
-$logo_file       = "logo.jpg";
-$logo_alt_text   = "my logo";
-$message         = "This is the main message of the page the shorter the better for a no scroll page. Also on mobile you don't want the email form at the bottom of the page!";
-$form_message    = "For updates or more information on this product.";
-$placeholder     = "your email";
-$submit          = "submit";
-$my_email        = "your.email@example.con";
-$email_subject   = "inquary from easy landing page";
-$error_message   = "Opps! we had an error in sending the email, our applogies, we have logged this error and will have a fix soon.";
-$success_message = "Hurrah! email sent! sit back and wait for the unvailing of our awesome site!";
+//the 16 variables
+$page                   = "name your landing page";
+$company                = "company name for footer";
+$company_URL            = "URL for footer";
+$page_title             = "tab title";
+$title                  = "Super Easy Landing Page!";
+$logo                   = true;
+$logo_text              = "An Awesome Logo";
+$logo_file              = "logo.jpg";
+$logo_alt_text          = "my logo";
+$message                = "This is the main message of the page the shorter the better for a no scroll page. Also on mobile you don't want the email form at the bottom of the page!";
+$form_message           = "For updates or more information on this product.";
+$first_name_placeholder = "your John";
+$first_name_placeholder = "your Handcock";
+$email_placeholder      = "your email";
+$submit                 = "submit";
+$my_email               = "your.email@example.con";
+$email_subject          = "inquary from easy landing page";
+$error_message          = "Opps! we had an error in sending the email, our applogies, we have logged this error and will have a fix soon.";
+$success_message        = "Hurrah! email sent! sit back and wait for the unvailing of our awesome site!";
 
 //to send the email through gmails servers set $mail_method to true
 $mail_method     = false;

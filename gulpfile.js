@@ -9,8 +9,8 @@ var Promise         = require('es6-promise').Promise,
     postcss         = require('gulp-postcss'),
     sass            = require('gulp-sass'),
     sasslint        = require('gulp-sass-lint'),
-    autoprefixer    = require('autoprefixer'),
-    csswring        = require('csswring'),
+    autoprefixer    = require('gulp-autoprefixer'),
+    cleanCSS        = require('gulp-clean-css'),
     concat          = require('gulp-concat'),
     uglify          = require('gulp-uglify'),
     jshint          = require('gulp-jshint'),
@@ -28,10 +28,10 @@ var src         = "assets",
     //js locations
     js_file     = "site",
     js_src      = src + "/js",
-    js_dest     = dest + "/js",
+    js_dest     = dest + "/",
     //image locations
-    image_src   = src + "/img",
-    image_dest  = dest + "/img";
+    image_src   = src + "/images",
+    image_dest  = dest + "/images";
 
 //=======Start================================================================================
 gulp.task('create-build-dir', function(){
@@ -52,9 +52,6 @@ gulp.task('create-dev-dir', function(){
   });
   createFile(css_src + '/' + css_file + '.scss', '//start styling!', function(err){
     (err) ? console.log(err) : console.log("scss file created".yellow);
-  });
-  mkdirp(js_lib_src, function(err){
-    (err) ? console.log(err) : console.log('js lib directory created'.yellow);
   });
   mkdirp(image_src, function(err){
     (err) ? console.log(err) : console.log('src img directory created'.yellow);
@@ -100,16 +97,14 @@ gulp.task('clean', function(){
 
 //=======stylesheet===========================================================================
 //sourcemaps | sass | prefix | minimize | filesize
-gulp.task('css',function(){
-  var processors = [autoprefixer({browsers:['last 2 version']}),csswring];
-  return gulp.src(css_src + '/' +css_file + '.scss')
-  .pipe(sasslint())
-  .pipe(sasslint.format())
+gulp.task('css', function(){
+  return gulp.src('assets/css/style.scss')
   .pipe(sourcemaps.init())
   .pipe(sass())
-  .pipe(postcss(processors))
+  .pipe(autoprefixer({browsers: "last 2 versions"}))
+  .pipe(cleanCSS({ compatibility: 'ie9' }))
   .pipe(sourcemaps.write())
-  .pipe(gulp.dest(css_dest))
+  .pipe(gulp.dest('assets/'))
   .pipe(filesize());
 });
 
@@ -117,29 +112,26 @@ gulp.task('css',function(){
 //concat | jshint | filesize
 //(--production) concat | sourcemaps | minimize | filesize
 gulp.task('js', function(){
-  return gulp.src([js_src + '/*.js'])
-  .pipe(concat(js_file + '.js'))
-  
-  .pipe(gulpif(argv.production, filesize()))
-  .pipe(gulpif(argv.production, sourcemaps.init()))
-  .pipe(gulpif(argv.production, uglify()))
-  .pipe(gulpif(argv.production, sourcemaps.write()))
-  
+  return gulp.src(['assets/js/*.js'])
+  .pipe(concat('site.js'))
   .pipe(jshint())
   .pipe(jshint.reporter('jshint-stylish'))
-  .pipe(gulp.dest(js_dest))
+  .pipe(sourcemaps.init())
+  .pipe(uglify())
+  .pipe(sourcemaps.write())
+  .pipe(gulp.dest('assets/'))
   .pipe(filesize());
 });
 
 //=======images===============================================================================
 gulp.task('image', function(){
-  return gulp.src(image_src + '/**')
+  return gulp.src('assets/images/**')
   .pipe(imagemin({
       progressive: true,
       svgPlugins: [{removeViewBox: false}],
       use: [pngquant()]
   }))
-  .pipe(gulp.dest(image_dest));
+  .pipe(gulp.dest('assets/img/'));
 });
 
 //=======copy files===========================================================================
@@ -149,8 +141,8 @@ gulp.task('copy', function(){
 });
 //=======watch================================================================================
 gulp.task('watch',function(){
-  gulp.watch(css_src + '/**/**', ['css']);
-  gulp.watch([js_lib_src + '/**/**', js_src + '/**/**'],['js']);
+  gulp.watch('assets/css/**', ['css']);
+  gulp.watch(['assets/js/**'],['js']);
 });
 
 //=======BUILD================================================================================

@@ -1,3 +1,7 @@
+$maincolor: black;
+$secondarycolor: white;
+
+
 *{box-sizing:border-box;}
 html, body{width:100%; height:100%; margin:0; padding:0;}
 .wrap{
@@ -27,8 +31,7 @@ html, body{width:100%; height:100%; margin:0; padding:0;}
     font-size:6em;
     font-family:"Source Sans Pro" sans-serif;
     font-weight:300;
-    color:hsla(233, 0%, 70%, 1);
-    text-shadow:0 2px 3px hsla(233, 0%, 5%, .2);
+    color: $maincolor;
 }
 
 .title, .message, .copywrite{
@@ -36,38 +39,36 @@ html, body{width:100%; height:100%; margin:0; padding:0;}
 }
 
 .title{
-    color:hsla(104, 0%, 50%, 1);
+    color: $maincolor;
     font: 300 3em "source Sans Pro", sans-serif;
-    text-shadow:0 1px 1px hsla(104, 0%, 82%, 1);
     margin:.5em 0 .5em 0;
 }
 
 .message{
     width:75%;
     margin: 0 auto 2em auto;
-    color:hsla(104, 0%, 70%, 1);
+    color: $maincolor;
     font:300 1.2em/1.5em "Source Sans Pro", sans-serif;
-    text-shadow:0 1px 0px hsla(104, 0%, 90%, 1);
 }
 
 .first_contact{
     margin: 0 auto;
     display:flex;
 }
+
 .form_wrap{
     margin:0 auto;
     display:flex;
 }
 .form_wrap input[type="email"]{
     font:300 1.3em "Source Sans Pro", sans-serif;
-    color:hsla(104, 0%, 50%, 1);
-    text-shadow:0 1px 0px hsla(104, 0%, 100%, 1);
+    color: $maincolor;
     background:hsla(104, 0%, 98%, 1);
     padding:.25em 1em;
+    margin-right: 1rem;
     outline:none;
     border:1px solid hsla(104, 0%, 80%, 1);
-    border-right:none;
-    border-radius:3px 0 0 3px;
+    border-radius: 2rem;
     display:block;
 }
 .form_wrap input[type="email"]:focus{
@@ -79,10 +80,9 @@ html, body{width:100%; height:100%; margin:0; padding:0;}
     border:none;
     padding: .25em 1em;
     font:300 1.3em "Source Sans Pro", sans-serif;
-    color:hsla(104, 0%, 50%, 1);
-    text-shadow:0 1px 0px hsla(104, 0%, 95%, 1);
+    color: $maincolor;
     background:hsla(104, 0%, 80%, 1);
-    border-radius:0 3px 3px 0;
+    border-radius: 2rem;
     display:block;
 }
 .form_wrap input[type="submit"]:focus{
@@ -98,21 +98,21 @@ html, body{width:100%; height:100%; margin:0; padding:0;}
 /*end submit*/
 .form_message{
     text-align:center;
-    color:hsla(104, 0%, 70%, 1);
+    color: $maincolor;
     font:300 italic .75em "source Sans Pro", sans-serif;
 }
 
 /*error and success*/
 .error{
     text-align:center;
-    color:hsla(360, 100%, 29%, 1);
+    color: $maincolor;
     font:400 1.3em/1.5 "Source Sans Pro", sans-serif;
     width:60%;
     margin:0 auto;
 }
 .success{
     text-align:center;
-    color:hsla(172, 100%, 28%, 1);
+    color: $maincolor;
     font:400 1.3em/1.5 "Source Sans Pro", sans-serif;
     width:60%;
     margin:0 auto;
@@ -128,17 +128,17 @@ footer{
 footer p{
     text-align:center;
     font:300 1em/3em "Source Sans Pro", sans-serif;
-    color:hsla(104, 0%, 70%, 1);
+    color: $maincolor;
     margin:0;
 }
 footer p a{
-    color:hsla(104, 0%, 70%, 1);
+    color: $maincolor;
     text-decoration:none;
     border-bottom: 1px dashed hsla(104, 0%, 85%, 1);
 }
 footer p a:hover{
-    color:hsla(104, 0%, 60%, 1);
-    border-color:hsla(104, 0%, 60%, 1);
+    color: $maincolor;
+    border-color: $maincolor;
 }
 
 @media(max-width:800px){
@@ -218,7 +218,3 @@ footer p a:hover{
         padding:.6em 1.5em;
     }
 }
-
-
-
-
