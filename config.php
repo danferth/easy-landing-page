@@ -35,7 +35,7 @@ date_default_timezone_set('America/Los_Angeles');
 
 //the 16 variables
 $page                   = "name your landing page";
-$company                = "company name for footer";
+$company                = "company name";
 $company_URL            = "URL for footer";
 $page_title             = "tab title";
 $title                  = "Super Easy Landing Page!";
@@ -46,7 +46,7 @@ $logo_alt_text          = "my logo";
 $message                = "This is the main message of the page the shorter the better for a no scroll page. Also on mobile you don't want the email form at the bottom of the page!";
 $form_message           = "For updates or more information on this product.";
 $first_name_placeholder = "your John";
-$first_name_placeholder = "your Handcock";
+$last_name_placeholder  = "your Handcock";
 $email_placeholder      = "your email";
 $submit                 = "submit";
 $my_email               = "your.email@example.con";

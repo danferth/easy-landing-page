@@ -131,7 +131,7 @@ gulp.task('image', function(){
       svgPlugins: [{removeViewBox: false}],
       use: [pngquant()]
   }))
-  .pipe(gulp.dest('assets/img/'));
+  .pipe(gulp.dest('assets/images/'));
 });
 
 //=======copy files===========================================================================
