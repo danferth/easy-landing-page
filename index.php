@@ -29,7 +29,7 @@ $ver       = "3.0"
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.26.12/sweetalert2.min.css" />
-    <link rel="stylesheet" href="assets/style.css" type="text/css?ver=<?php echo $ver; ?>" />
+    <link rel="stylesheet" href="assets/style.css?ver=<?php echo $ver; ?>" type="text/css" />
     
 </head>
 <body>

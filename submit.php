@@ -2,11 +2,11 @@
 //this up top
 session_start();
 require_once("mail-functions.php");
-require 'config.php';
-require 'assets/lib/PHPMailer/PHPMailerAutoload.php';
+require_once('config.php');
+require_once('assets/lib/PHPMailer/PHPMailerAutoload.php');
 
 $server_dir = $_SERVER['HTTP_HOST'] . rtrim(dirname($_SERVER['PHP_SELF']), '/\\') . '/';
-$next_page = 'index.php';
+$next_page = '/index.php';
 header('HTTP/1.1 303 See Other');
 //trim post
 array_walk($_POST, 'trim_value');
@@ -70,10 +70,10 @@ if($mail_method == true){
   // 0 = off (for production use)
   // 1 = client messages
   // 2 = client and server messages
-  $mail->SMTPDebug = 2;
-  $mail->Debugoutput = 'html';
+//   $mail->SMTPDebug = 2;
+//   $mail->Debugoutput = 'html';
   //after testing comment out the above two(2) lines
-  $mail->Host = 'smtp.gmail.com';
+  $mail->Host = gethostbyname('smtp.gmail.com');
   $mail->Port = 587;
   $mail->SMTPSecure = 'tls';
   $mail->SMTPAuth = true;

@@ -27,7 +27,7 @@ function checkRequired($requiredArray,  $server_dir, $next_page, $query_string){
   //redirect back with error
   if($requiredCount > 0){
     $query_string .= '&success=required';
-    header('Location: https://' . $server_dir . $next_page . $query_string);
+    header('Location: http://' . $server_dir . $next_page . $query_string);
     exit();
   }
 };
@@ -46,7 +46,7 @@ function checkEmailValid($emailArray, $server_dir, $next_page, $query_string){
   //or more of the emails so redirect to form and trigger error message
   if($isEmailValid > 0){
     $query_string .= '&success=email';
-    header('Location: https://' . $server_dir . $next_page . $query_string);
+    header('Location: http://' . $server_dir . $next_page . $query_string);
     exit();
   }
 };
@@ -64,7 +64,7 @@ function checkHoneypot($honeyArray, $server_dir, $next_page, $query_string){
   if($honeyCount > 0){
     $query_string = '?first_name=Edward';
 		$query_string .= '&success=true';
-		header('Location: https://' . $server_dir . $next_page . $query_string);
+		header('Location: http://' . $server_dir . $next_page . $query_string);
 		exit();
   }
 };
@@ -75,7 +75,7 @@ function formTimeCheck($formTimeLimit, $server_dir, $next_page, $query_string){
   
   if(!isset($_SESSION['formLoadTime'])){
     $query_string .= '&success=false';
-    header('Location: https://' . $server_dir . $next_page . $query_string);
+    header('Location: http://' . $server_dir . $next_page . $query_string);
     exit();
   }else{
     $formLoadTime = $_SESSION['formLoadTime'];
@@ -84,7 +84,7 @@ function formTimeCheck($formTimeLimit, $server_dir, $next_page, $query_string){
     $formTimeSeconds = $formSubmitTime - $formLoadTime;
     if($formTimeSeconds < $formTimeLimit){
       $query_string .= '&success=false';
-      header('Location: https://' . $server_dir . $next_page . $query_string);
+      header('Location: http://' . $server_dir . $next_page . $query_string);
       exit();
     }
   }
