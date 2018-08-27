@@ -70,8 +70,8 @@ if($mail_method == true){
   // 0 = off (for production use)
   // 1 = client messages
   // 2 = client and server messages
-//   $mail->SMTPDebug = 2;
-//   $mail->Debugoutput = 'html';
+  // $mail->SMTPDebug = 2;
+  // $mail->Debugoutput = 'html';
   //after testing comment out the above two(2) lines
   $mail->Host = gethostbyname('smtp.gmail.com');
   $mail->Port = 587;

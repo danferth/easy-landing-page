@@ -55,12 +55,12 @@ $ver       = "3.0"
     }
     ?>
     <form id='landingpage' class='first_contact' action='submit.php' method='post'>
-          <input id='fname' type='text' name='fname' placeholder='<?php echo $first_name_placeholder; ?>' required/>
-          <input id='lname' type='text' name='lname' placeholder='<?php echo $last_name_placeholder; ?>' required/>
-          <input id='email' type='email' name='email' placeholder='<?php echo $email_placeholder; ?>' required/>
+          <input class='animated fadeIn' id='fname' type='text' name='fname' placeholder='<?php echo $first_name_placeholder; ?>' required/>
+          <input class='animated fadeIn' id='lname' type='text' name='lname' placeholder='<?php echo $last_name_placeholder; ?>' required/>
+          <input class='animated fadeIn' id='email' type='email' name='email' placeholder='<?php echo $email_placeholder; ?>' required/>
           <input type='text' name='your-name925htj' id='your-name925htj' autocomplete='". $rand_str1 ."'/>
           <input type='text' name='your-email247htj' id='your-email247htj' autocomplete='". $rand_str2 ."'/>
-          <input type='submit' value='<?php echo $submit; ?>'/>
+          <input class='animated fadeIn' type='submit' value='<?php echo $submit; ?>'/>
     </form>
         
     <?php    
