@@ -65,12 +65,13 @@ input[type="email"], input[type="text"]{
     font:300 1.3em "Source Sans Pro", sans-serif;
     color: $textColor;
     background:hsla(104, 0%, 98%, 1);
-    padding:.25rem 1rem;
+    padding:.5rem 1.5rem;
     margin-right: 1rem;
     outline:none;
     border:1px solid $companyColor;
     border-radius: 2rem;
     display:block;
+    text-align:center;
 }
 input[type="email"]:focus, , input[type="text"]:focus{
     box-shadow:inset 0 0 3px hsla(104, 0%, 75%, 1);
@@ -79,7 +80,7 @@ input[type="email"]:focus, , input[type="text"]:focus{
 input[type="submit"]{
     outline:none;
     border:none;
-    padding: .25rem 1rem;
+    padding: .5rem 2rem;
     font:300 1.3rem "Source Sans Pro", sans-serif;
     color: lighten($companyColor, 60%);
     background:$companyColor;
@@ -88,6 +89,9 @@ input[type="submit"]{
     transition: background 350ms;
     cursor:pointer;
     -webkit-appearance: none;
+}
+input[type="submit"]:focus{
+    background:darken($companyColor, 25%);
 }
 input[type="submit"]:hover{
     background:darken($companyColor, 15%);
@@ -142,11 +146,11 @@ footer p a:hover{
         display:block;
         width:90%;
         margin-right:0;
-        margin-bottom: 1rem;
-        padding:1rem 1.5rem;
+        margin-bottom: .75rem;
+        padding:1rem 1rem;
         font-size:2rem;
         border-radius:1rem;
-        text-align:center;
+
     }
 }
   
