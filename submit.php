@@ -73,7 +73,7 @@ if($mail_method == true){
   // $mail->SMTPDebug = 2;
   // $mail->Debugoutput = 'html';
   //after testing comment out the above two(2) lines
-  $mail->Host = gethostbyname('smtp.gmail.com');
+  $mail->Host = 'smtp.gmail.com';
   $mail->Port = 587;
   $mail->SMTPSecure = 'tls';
   $mail->SMTPAuth = true;
